@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="./css/style.css"><!--link to css-->
+    <link rel="shortcut icon" href="./res/icon.png" type="image/x-icon"><!--icon onglet -->
+</head>
+<body>
+    <div class="container"  style="overflow-y: scroll;" >
+        <h1 style="text-align: center;color: blueviolet;letter-spacing: 3px;">Covid-19</h1>
+        <form action="res.html" method="GET" id="Form1" onsubmit="return verif()" >
+            <h3 class="ip">INFO-PERSONEL</h3>
+            <div id="second-container">
+                <div class="first" >
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+                    <input type="date" name="date" id="date">
+                    <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                    <input type="text" name="numero" id="numero" placeholder="Numero">
+                    <input type="email" name="email" id="email"placeholder="Email">
+                       <h3>Maladies chroniques</h3>
+                       <p>Avez-vous des maladies chroniques ?</p>
+                       <div class="inp-box" style="margin-top: 20px;">
+                        <input type="checkbox" name="cardiaque" id="cardiaque ck">
+                        <label for="cardiaque">Maladie cardiaque</label>
+                       </div>
+                       <div class="inp-box">
+                        <input type="checkbox" name="Pulmonaire" id="Pulmonaire ck">
+                        <label for="Pulmonaire">Maladie Pulmonaire</label>
+                       </div> 
+                       <div class="inp-box">
+                        <input type="checkbox" name="Diabète" id="Diabète ck">
+                        <label for="Diabète">Diabète</label>
+                    </div>
+                    <div class="inp-box">
+                        <input type="checkbox" name="Troubles" id="Troubles ck">
+                        <label for="Troubles">Troubles auto-immunitaire</label>
+                    </div>
+                    <h3>Les symptômes les plus communs</h3>
+                    <div class="ouinon">
+                        <h4>Fièvre :</h4>
+                        <p>Est-ce que votre température corporelle a dépassée 38° ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="temperateur" id="temperateuroui"value="temperateuroui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="temperateur" id="temperateurnon" value="temperateurnon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <h4>Fatigue :</h4>
+                        <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="fatigue" id="ouipt" value="fatigueoui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="fatigue" id="fatiguenon" value="fatiguenon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <h4>Toux :</h4>
+                        <p>Avez-vous de la toux ? Quelle sorte ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="toux" id="sechoui" value="sechoui"><label>Toux sèche</label>
+                        </div>
+                        <div class="oui">
+                            <input type="radio" name="toux" id="ouipt" value="regulieroui"><label>Toux régulière</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="toux" id="non" value="touxnon"><label>non</label>
+                        </div>
+                    </div>
+                    <h3>Les symptômes Sévères</h3>
+                    <div class="ouinon">
+                        <p>Avez-vous eu des difficultés à respirer ou un essoufflement ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="respirer" id="ouiha" value="respireroui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="respirer" id="nonha" value="respirernon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="pressions" id="ouiha" value="pressionsoui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="pressions" id="nonha" value="pressionsnon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <p>Avez-vous eu une perte de la parole ou du mouvement ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="parole" id="ouiha" value="paroleoui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="parole" id="nonha" value="parolenon"><label>non</label>
+                        </div>
+                    </div>
+                    <h3>Les symptômes moins communs</h3>
+                    <div class="ouinon">
+                        <p>Avez-vous eu une perte du goût de l’odorat ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="goutt" id="ouipt" value="gouteroui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="goutt" id="gouternon" value="gouternon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <p>Avez-vous des maux de gorge ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="gorge" id="ouipt" value="gorgeoui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="gorge" id="gorgenon" value="gorgenon"><label>non</label>
+                        </div>
+                    </div>
+                    <div class="ouinon" style="margin-top: 15px;">
+                        <p>Avez-vous des maux de tête ?</p>
+                        <div class="oui" style="margin-top: 10px;">
+                            <input type="radio" name="maux" id="mauxoui" value="mauxoui"><label>oui</label>
+                        </div>
+                        <div class="non">
+                            <input type="radio" name="maux" id="mauxnon" value="mauxnon"><label>non</label>
+                        </div>
+                    </div>
+            </div>
+            <div id="btn">
+                <button id="btn" type="submit">envoyer</button> 
+            </div>
+    </div>
+        </form>
+
+
+
+
+
+<script src="./js/main.js"></script><!--link to javascript-->
+</body>
+</html>

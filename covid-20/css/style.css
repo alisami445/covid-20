@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}   
+.first{
+    padding-right:15px;
+}
+body{
+    background-image:url(background-covid.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    width: 650px;
+    height: 400px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.ip{
+    text-align: start;
+    color: #1120b0;
+    margin:12px 0
+}
+h3{
+    text-align: start;
+    color: #1120b0;
+    margin:35px 0;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
+h4{
+    color: #ff0000;
+    margin-bottom: 25px;
+}
+.container form{
+    width: 575px;
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    right: 40px;
+    transition: 0.5s;
+}
+.inp-box {
+    width: 60%;
+    min-width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+    padding: 3px 15px;
+  }
+  .ouinon {
+    width: 100%;
+  }
+  .oui,
+  .non {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 60%;
+    margin-left: 12px;
+  }
+  .oui input,
+  .non input {
+    padding: 3px 15px;
+  }
+#Form1 input[type="text"],
+#Form1 input[type="date"],
+#Form1 input[type="email"],
+#Form1 input[type="number"]{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+}
+::placeholder{
+    color: #777;
+ }
+
+form button{
+    width: 110px;
+    height:35px ;
+    margin: 0 10px;
+    background: linear-gradient(to right,#121a9f,#7e1264);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 80%;
+}
+label{
+    padding-left: 10px;
+}
+#btn{
+    margin-bottom: 3px;
+}
